@@ -1,0 +1,76 @@
+﻿﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container " style="display: block; text-align: center;">
+
+    <div class="nav" style="display: flex;">
+        <!----------------------------------  Barre de recherche -------------------------------------------------->
+        <div class="text-center">
+            <input name="query" aria-label="search" autocomplete="off" class="search-field" id="sm"
+                   placeholder="Rechercher par titre, auteur, série" type="search" value="" />
+        </div>
+        <div>
+            <button style="background-color: #33C198; border-color: #33C198;">Chercher</button>
+        </div>
+    </div>
+   
+
+    <!----------------------------------  Liste des livres -------------------------------------------------->
+    <div class="grid">
+        <div class="book" style="display: flex;">
+            <a class="Infos_complets margin decoration" href="@Url.Action("BookInfos", "Home")">
+                <!--  Image --->
+                <div class="img flex-container" style="box-shadow">
+                    <img class="cover-image height1 notranslate_alt book-image" alt="Le Quatrième homme eBook by Lisa Gardner"
+                         src="https://cdn.kobo.com/book-images/dd078d1f-6396-4178-8e24-b7b98ddae930/140/215/60/False/le-quatrieme-homme.jpg"
+                         data-lazy="//cdn.kobo.com/book-images/dd078d1f-6396-4178-8e24-b7b98ddae930/140/215/60/False/le-quatrieme-homme.jpg">
+                </div>
+                <!--  Infos du livre --->
+                <div class="Bookdetails" style="text-align: center;">
+                    <div class="title ">Titre</div>
+                    <div class="auteur ">Auteur</div>
+                    <div class="panier ">Emprunter</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<style>
+    .nav{
+        margin-left:150px;
+    }
+    .container{
+        margin-left: 100px;
+    }
+    .margin{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    a{
+        margin-bottom: 10px;
+    }
+    input{
+        padding: 5px;
+        width: 800px;
+        margin-bottom: 70px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    button{
+        margin-top: 12px;
+        padding: 4px;
+        border-radius: 8px;
+        margin-left: 10px;
+    }
+    .grid{
+        display:grid;
+    }
+    .decoration{
+        text-decoration:none;
+    }
+</style>
