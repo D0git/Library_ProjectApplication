@@ -2,7 +2,40 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div style="display:flex">
+
+    <div class="x" style="margin-top:100px;">
+        <h1>
+            <b>La lecture est un acte d'exploration</b>
+        </h1>
+        <h2>
+            Nous permettons de découvrir de nouveaux horizons<br />
+            <a href="@Url.Action("Index","Livres")" style="color:#33C198"><b>à chaque tour de page</b></a>
+        </h2>
+    </div>
+    <div>
+        <img src="./css/pics/pic_accueil.jpg">
+
+    </div>
 </div>
+
+
+<style>
+    img {
+        width: 430px;
+        height: 560px;
+    }
+
+    h1 {
+        font-size: 95px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    a {
+        border-block-color: #33C198;
+    }
+</style>

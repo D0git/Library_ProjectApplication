@@ -22,6 +22,50 @@ namespace LibraryClient.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LibraryClient.Models.Adherent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Adresse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateNaissance")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Prenom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Adherents");
+                });
+
             modelBuilder.Entity("LibraryClient.Models.Auteur", b =>
                 {
                     b.Property<int>("Id")
@@ -41,6 +85,10 @@ namespace LibraryClient.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageWeb")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -82,6 +130,10 @@ namespace LibraryClient.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageWeb")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("NbrEmpr")
                         .HasColumnType("int");
 
@@ -102,6 +154,29 @@ namespace LibraryClient.Migrations
                     b.ToTable("Livres");
                 });
 
+            modelBuilder.Entity("LibraryClient.Models.Panier", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AdherentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LivreId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AdherentId");
+
+                    b.HasIndex("LivreId");
+
+                    b.ToTable("Paniers");
+                });
+
             modelBuilder.Entity("LibraryClient.Models.Livre", b =>
                 {
                     b.HasOne("LibraryClient.Models.Auteur", "Auteur")
@@ -111,6 +186,25 @@ namespace LibraryClient.Migrations
                         .IsRequired();
 
                     b.Navigation("Auteur");
+                });
+
+            modelBuilder.Entity("LibraryClient.Models.Panier", b =>
+                {
+                    b.HasOne("LibraryClient.Models.Adherent", "Adherent")
+                        .WithMany()
+                        .HasForeignKey("AdherentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LibraryClient.Models.Livre", "Livre")
+                        .WithMany()
+                        .HasForeignKey("LivreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Adherent");
+
+                    b.Navigation("Livre");
                 });
 #pragma warning restore 612, 618
         }

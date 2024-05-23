@@ -16,6 +16,7 @@ namespace LibraryClient.Models
 
         public string Nom { get; set; }
         public string Prenom { get; set; }
+        public string ImageWeb { get; set; }
         public string Image { get; set; }
         public DateTime DateNaissance { get; set; }
         public DateTime DateDeces { get; set; }
@@ -25,21 +26,23 @@ namespace LibraryClient.Models
         {
         }
 
-        public Auteur(string nom, string prenom, string image, DateTime dateNaissance, DateTime dateDeces, string biographie)
+        public Auteur(string nom, string prenom, string imageWeb, string imageDesk, DateTime dateNaissance, DateTime dateDeces, string biographie)
         {
             Nom = nom;
             Prenom = prenom;
-            Image = image;
+            ImageWeb = imageWeb;
+            Image = imageDesk;
             DateNaissance = dateNaissance;
             DateDeces = dateDeces;
             Biographie = biographie;
         }
 
-        public void Edit(string nom, string prenom, string image, DateTime dateNaissance, DateTime dateDeces, string biographie)
+        public void Edit(string nom, string prenom, string imageWeb, string imageDesk, DateTime dateNaissance, DateTime dateDeces, string biographie)
         {
             Nom = nom;
             Prenom = prenom;
-            Image = image;
+            Image = imageDesk;
+            ImageWeb = imageWeb;
             DateNaissance = dateNaissance;
             DateDeces = dateDeces;
             Biographie = biographie;

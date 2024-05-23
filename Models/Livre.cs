@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace LibraryClient.Models
 {
@@ -21,22 +15,23 @@ namespace LibraryClient.Models
         public int NbrExempl { get; set; }
         public int NbrEmpr { get; set; }
         public string Image { get; set; }
+        public string ImageWeb { get; set; }
         public float Prix { get; set; }
 
-        
+
         [ForeignKey("AuteurId")]
         public Auteur Auteur { get; set; }
         public int AuteurId { get; set; }
 
-        
-        [Display(Name ="Genre")]
+
+        [Display(Name = "Genre")]
         public Genre Genre { get; set; }
 
         public Livre() { }
 
-        public Livre(string titre,Auteur auteur,Genre genre, DateTime dateParution, string description, int nbrExempl,int n,string image, float prix)
+        public Livre(string titre, Auteur auteur, Genre genre, DateTime dateParution, string description, int nbrExempl, int n, string image, string imageWeb, float prix)
         {
-            
+
             this.Titre = titre;
             this.Auteur = auteur;
             this.Genre = genre;
@@ -45,10 +40,11 @@ namespace LibraryClient.Models
             this.NbrExempl = nbrExempl;
             this.NbrEmpr = n;
             this.Image = image;
+            this.ImageWeb = imageWeb;
             this.Prix = prix;
         }
 
-        public void Editer_livre(string titre, Auteur auteur, Genre genre, DateTime dateParution, string description, int nbrExempl, int nbrEmpr, string image, float prix)
+        public void Editer_livre(string titre, Auteur auteur, Genre genre, DateTime dateParution, string description, int nbrExempl, int nbrEmpr, string image, string imageWeb, float prix)
         {
             this.Titre = titre;
             this.Auteur = auteur;
@@ -58,11 +54,10 @@ namespace LibraryClient.Models
             this.NbrExempl = nbrExempl;
             this.NbrEmpr = nbrEmpr;
             this.Image = image;
+            this.ImageWeb = imageWeb;
             this.Prix = prix;
 
 
         }
-
-
     }
 }

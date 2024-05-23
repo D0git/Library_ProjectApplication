@@ -35,5 +35,8 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "auteurs",
     pattern: "{controller=Auteurs}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "paniers",
+    pattern: "{controller=Paniers}/{action=Index}/{id?}");
 
 app.Run();

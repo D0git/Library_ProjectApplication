@@ -1,0 +1,389 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LibraryClient.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LibraryClient.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\LogoWindow.png",
+      "PackagePath": "staticwebassets\\css\\pics\\LogoWindow.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\auteur\\Benjelloun_Taher.png",
+      "PackagePath": "staticwebassets\\css\\pics\\auteur\\Benjelloun_Taher.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\auteur\\Dostoeevski_Fiodor.png",
+      "PackagePath": "staticwebassets\\css\\pics\\auteur\\Dostoeevski_Fiodor.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\auteur\\Hugo_Victor.png",
+      "PackagePath": "staticwebassets\\css\\pics\\auteur\\Hugo_Victor.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\auteur\\Hugo_Victore.png",
+      "PackagePath": "staticwebassets\\css\\pics\\auteur\\Hugo_Victore.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\auteur\\Shakespeare_William.png",
+      "PackagePath": "staticwebassets\\css\\pics\\auteur\\Shakespeare_William.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\auteur\\test_test.png",
+      "PackagePath": "staticwebassets\\css\\pics\\auteur\\test_test.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\cnx_ins.jpg",
+      "PackagePath": "staticwebassets\\css\\pics\\cnx_ins.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Antoine et Cleopatre.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Antoine et Cleopatre.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Crime et Chatiment.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Crime et Chatiment.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Hamlet.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Hamlet.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\L Enfant de sable.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\L Enfant de sable.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\L Homme qui rit.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\L Homme qui rit.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\L Idiot.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\L Idiot.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\L Islam expliqué aux enfants.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\L Islam expliqué aux enfants.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\La Nuit sacrée.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\La Nuit sacrée.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Le Dernier Jour d un condamne.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Le Dernier Jour d un condamne.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Le Joueur.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Le Joueur.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Le Racisme expliqué a ma fille.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Le Racisme expliqué a ma fille.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Le Roi Lear.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Le Roi Lear.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Les Chatiments.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Les Chatiments.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Les Démons.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Les Démons.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Les Fréres Karamazov.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Les Fréres Karamazov.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Les Misérable.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Les Misérable.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Les Misérables.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Les Misérables.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Les Yeux baissés.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Les Yeux baissés.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Notre-Dame de Paris.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Notre-Dame de Paris.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Othello.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Othello.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\Roméo et Juliette.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\Roméo et Juliette.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\livre\\test.png",
+      "PackagePath": "staticwebassets\\css\\pics\\livre\\test.png"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\pics\\pic_accueil.jpg",
+      "PackagePath": "staticwebassets\\css\\pics\\pic_accueil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ZAHA Fatima Zahra\\Desktop\\LibraryClient\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LibraryClient.props",
+      "PackagePath": "build\\LibraryClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LibraryClient.props",
+      "PackagePath": "buildMultiTargeting\\LibraryClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LibraryClient.props",
+      "PackagePath": "buildTransitive\\LibraryClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

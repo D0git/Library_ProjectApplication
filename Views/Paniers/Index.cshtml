@@ -1,0 +1,160 @@
+﻿@using LibraryClient.Data
+@using Microsoft.EntityFrameworkCore
+@model IEnumerable<LibraryClient.Models.Panier>
+
+@{
+    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Details";
+
+    var optionsBuilder = new DbContextOptionsBuilder<LibraryClientContext>();
+    optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=librarydbo;Trusted_Connection=True;MultipleActiveResultSets=true");
+
+    // Création de l'instance de LibraryClientContext en utilisant les options de configuration
+    var context = new LibraryClientContext(optionsBuilder.Options);
+    List<LibraryClient.Models.Livre> livres = context.Livres.ToList();
+    List<LibraryClient.Models.Auteur> auteurs = context.Auteurs.ToList();
+}
+
+
+<div class="container">
+    <!--1ere ligne-->
+    <div class="prligne" style="display:flex;justify-content: space-between;">
+        <div>
+            <h3 style="color:#33C198;">Votre panier </h3>
+        </div>
+        <div>
+            <div class="btn">
+                <button id="myBtn" style="border-radius:8px; color:#fff">Confirmer</button>
+            </div>
+            <div class="btn">
+                <button id="viderPan" style="border-radius:8px; color:#fff">Vider panier</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- contenu du panier -->
+    
+    <div class="d-flex flex-column">
+		@foreach (var item in Model) 
+        { 
+            <div class="card">
+                <div style="display:flex;">
+                    <div class="check">
+                        <input type="checkbox" id="imageCheckbox" style="margin-left:5px;transform: scale(1.5);">
+                    </div>
+                    <div class="img">
+                        <img class="book-image" alt="" id="image"
+                             src="@Html.DisplayFor(modelItem => item.Livre.ImageWeb)"
+                             data-lazy="//cdn.kobo.com/book-images/dd078d1f-6396-4178-8e24-b7b98ddae930/140/215/60/False/le-quatrieme-homme.jpg">
+                    </div>
+                    <div class="Bookdetails" style="text-align: justify; margin-left : 60px; margin-top:15px;width:80%">
+                        <div class="title">@Html.DisplayFor(modelItem => item.Livre.Titre)</div>
+                        <div class="auteur">@Html.DisplayFor(modelItem => item.Livre.Auteur.Nom) @Html.DisplayNameFor(modelItem => item.Livre.Auteur.Prenom)</div>
+                        <div class="prix">Prix</div>
+                    </div>
+                    <div>
+                        <button type="reset" id="annuler" style="border-radius:8px;margin: 30px 0px 0px 0px;color:#fff">Supprimer</button>
+                    </div>
+
+                    <!---Modal------------------------------------------------------------------------------------->
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"><b>ET HOP !</b> C'EST VOTRE PANIER</h5>
+                                    <button id="closeButton" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card">
+                                        <table class="table" style="width: 300px">
+                                            <tbody>
+                                                <tr>
+                                                    <td> <img src="" alt="logo" /></td>
+                                                    <td>Date</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Emprunteur</th>
+                                                    <td>Emprunteur</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Titre</th>
+                                                    <td>Titre</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Genre</th>
+                                                    <td>Genre</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Auteur</th>
+                                                    <td>Auteur</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date d'édition</th>
+                                                    <td>Date d'édition</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date de parution</th>
+                                                    <td>Date de parution</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Prix</th>
+                                                    <td>Prix</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date début</th>
+                                                    <td>Date début</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date fin</th>
+                                                    <td>Date fin</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                                        <button class="btn btn-primary">Télécharger</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        }
+
+</div>
+
+
+<style>
+    img {
+        margin-left: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80px;
+        height: 100px;
+    }
+
+
+
+    table {
+        text-align: justify;
+    }
+
+    button {
+        background-color: #33C198;
+        border-color: #33C198;
+    }
+
+    .card {
+        border: 1px solid #33C198;
+        padding: 10px;
+        box-shadow: 0 10px 10px rgba(51, 193, 152, 0.5);
+    }
+</style>
+
+<script src="~/js/test.js"></script>

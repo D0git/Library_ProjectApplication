@@ -1,72 +1,209 @@
-﻿@model LibraryClient.Models.Livre
+﻿@using LibraryClient.Data
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.Extensions.Options
+@model LibraryClient.Models.Livre
+
+
+
 
 @{
+
     ViewData["Title"] = "Details";
+
+    var optionsBuilder = new DbContextOptionsBuilder<LibraryClientContext>();
+    optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=librarydbo;Trusted_Connection=True;MultipleActiveResultSets=true");
+
+    // Création de l'instance de LibraryClientContext en utilisant les options de configuration
+    var context = new LibraryClientContext(optionsBuilder.Options);
+    List<LibraryClient.Models.Livre> livres = context.Livres.Where(l => l.Genre == Model.Genre).ToList();
+    List<LibraryClient.Models.Auteur> auteurs = context.Auteurs.ToList();
+    int i=0;
+    
 }
+@if(livres.Count()>4){ i = 4; }else{ i = livres.Count(); }
 
-<h1>Details</h1>
+<div class="container d-flex flex-column " style="display: block;">
 
-<div>
-    <h4>Livre</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Titre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Titre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateParution)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateParution)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NbrExempl)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NbrExempl)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NbrEmpr)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NbrEmpr)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Prix)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Prix)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Auteur)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Auteur.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genre)
-        </dd>
-    </dl>
+    <div class="nav justify-content-center" style="display: flex;">
+        <!----------------------------------  Barre de recherche -------------------------------------------------->
+        <div class="text-center">
+            <input name="query" aria-label="search" autocomplete="off" class="search-field" id="sm"
+                   placeholder="Rechercher par titre, auteur, série" type="search" value="" />
+        </div>
+        <div>
+            <button style="background-color: #33C198;border-color: #33C198;">Chercher</button>
+        </div>
+    </div>
+    <!--Aut card -->
+    <div class="card">
+
+        <div style="display:flex; margin:20px 0px 20px 70px">
+            <div style="display:block">
+                <div class="BookImage">
+                    <img src="@Html.DisplayFor(model => model.ImageWeb)" />
+                </div>
+
+            </div>
+
+            <div class="Infos" style="display:block">
+
+                <div class="caracteristiques" style="width: fit-content;margin-left:100px ">
+
+                    <table class="table row" style="width: 500px">
+                        <tbody>
+                            <tr>
+                                <th>Titre</th>
+                                <td>@Html.DisplayFor(model => model.Titre)</td>
+                            </tr>
+                            <tr>
+                                <th>Auteur</th>
+                                <td>@Html.DisplayFor(model => model.Auteur.Nom) @Html.DisplayFor(model => model.Auteur.Prenom)</td>
+                            </tr>
+                            <tr>
+                                <th>Genre</th>
+                                <td>@Html.DisplayFor(model => model.Genre)</td>
+                            </tr>
+                            <tr>
+                                <th>Date de parution</th>
+                                <td>@Html.DisplayFor(model => model.DateParution)</td>
+                            </tr>
+
+                            <tr>
+                                <th>Prix d'emprunt dhs/jrs</th>
+                                <td>@Html.DisplayFor(model => model.Prix)</td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card1">
+                    <p>
+                        @Html.DisplayFor(model => model.Description)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:20px">
+        <h4 style="color:#33C198; text-align:justify;">Quelques ouvrages du genre @Html.DisplayFor(model => model.Genre) :</h4>
+        <div style="display: flex;justify-content: space-around; margin-left:110px">
+            @for (var j =0;j<i; j++ )
+            {
+                <div class="book">
+                    <a class="Infos_complets margin decoration">
+                        <!--  Image --->
+                        <div class="img flex-container">
+                            <img class="book-image" alt=""
+                                 src="@Html.DisplayFor(modelItem => livres[j].ImageWeb)" />
+                        </div>
+                        <!--  Infos du livre --->
+                        <div class="Bookdetails" style="text-align: center;">
+                            <div class="title "> <h6 style="color: black">@Html.DisplayFor(modelItem => livres[j].Titre)</h6></div>
+                            <div class="auteur "><h8 style="color: black">@Html.DisplayFor(modelItem => livres[j].Auteur.Prenom) @Html.DisplayFor(modelItem => livres[j].Auteur.Nom)</h8></div>
+
+                        </div>
+                    </a>
+                </div>
+                
+            }
+
+            
+
+
+        </div>
+    </div>
+
 </div>
-<div>
+@* <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
+<style>
+    
+
+    .container {
+        text-align: center;
+    }
+
+    input {
+        padding: 5px;
+        width: 800px;
+        margin-bottom: 70px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    button {
+        margin-top: 12px;
+        padding: 4px;
+        border-radius: 8px;
+        margin-left: 10px;
+    }
+
+    .decoration {
+        text-decoration: none;
+    }
+
+    table {
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .card {
+
+        border: 1px solid #33C198;
+        box-shadow: 0 10px 10px rgba(51, 193, 152, 0.5);
+    }
+
+    img {
+        width: 255px;
+        height: 395px;
+    }
+
+    button {
+        margin-right: 10px;
+    }
+
+    .card1 {
+        text-align: justify;
+        margin-right: 50px;
+        margin-left: -100px
+    }
+
+    th {
+        width: 200px;
+    }
+
+    td {
+        width: 300px;
+    }
+
+    p {
+        margin: 50px 50px 50px 200px;
+    }
+
+    a {
+        margin: 5px 10px 2px 5px;
+    }
+
+    .book-image {
+        width: 140px;
+        height: 217px;
+    }
+
+    #modal {
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    #image {
+        width: 70px;
+        height: 90px;
+    }
+</style>
+
+
+<script src="~/js/script.js"></script>

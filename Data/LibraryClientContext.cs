@@ -16,6 +16,8 @@ namespace LibraryClient.Data
 
         public DbSet<LibraryClient.Models.Livre> Livres { get; set; } = default!;
         public DbSet<LibraryClient.Models.Auteur> Auteurs { get; set; } = default!;
+        public DbSet<LibraryClient.Models.Panier> Paniers { get; set; } = default!;
+        public DbSet<LibraryClient.Models.Adherent> Adherents { get; set; } = default!;
         //public LibraryClientContext() { }
     }
 }

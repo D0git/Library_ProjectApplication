@@ -19,9 +19,9 @@
     List<LibraryClient.Models.Auteur> auteurs = context.Auteurs.ToList();
 }
 
-<div class="container " style="display: block;">
+<div class="container d-flex flex-column " style="display: block;">
 
-    <div class="nav" style="display: flex;">
+    <div class="nav justify-content-center" style="display: flex;">
         <!----------------------------------  Barre de recherche -------------------------------------------------->
         <div class="text-center">
             <input name="query" aria-label="search" autocomplete="off" class="search-field" id="sm"
@@ -32,19 +32,19 @@
         </div>
     </div>
     <!--Aut card -->
-    <div class="text-center card">
+    <div class="container card">
 
-        <div style="display:flex; margin:50px 0px 20px 70px">
+        <div style="display:flex; margin:20px 0px 20px 70px">
             <div style="display:block">
                 <div class="BookImage">
-                    <img src="@Html.DisplayFor(model => model.Image)" />
+                    <img src="@Html.DisplayFor(model => model.ImageWeb)" />
                 </div>
 
             </div>
 
             <div class="Infos" style="display:block">
 
-                <div class="caracteristiques" style="width: fit-content;margin-left:200px ">
+                <div class="caracteristiques" style="width: fit-content;margin-left:100px ">
 
                     <table class="table row" style="width: 500px">
                         <tbody>
@@ -85,18 +85,18 @@
             @for (var i = 0; i < 4; i++)
             {
                 <div class="book">
-                    <a class="Infos_complets margin decoration" href="@Url.Action("BookInfos", "Home")">
+                    <a class="Infos_complets margin decoration">
                         <!--  Image --->
                         <div class="img flex-container">
                             <img class="book-image" alt=""
-                                 src="@Html.DisplayFor(modelItem => livres[i].Image)"
+                                 src="@Html.DisplayFor(modelItem => livres[i].ImageWeb)"
                             />
                         </div>
                         <!--  Infos du livre --->
                         <div class="Bookdetails" style="text-align: center;">
-                            <div class="title "> @Html.DisplayFor(modelItem => livres[i].Titre)</div>
-                            <div class="auteur ">@Html.DisplayFor(modelItem => livres[i].Auteur.Prenom) @Html.DisplayFor(modelItem => livres[i].Auteur.Nom)</div>
-                            <div class="panier ">Emprunter</div>
+							<div class="title "> <h6 style="color: black">@Html.DisplayFor(modelItem => livres[i].Titre)</h6></div>
+                            <div class="auteur "><h8 style="color: black">@Html.DisplayFor(modelItem => livres[i].Auteur.Prenom) @Html.DisplayFor(modelItem => livres[i].Auteur.Nom)</h8></div>
+                            
                         </div>
                     </a>
                 </div>
@@ -112,12 +112,10 @@
     <a asp-action="Index">Back to List</a>
 </div> *@
 <style>
-    .nav {
-        margin-left: 150px;
-    }
+    
 
     .container {
-        margin-left: 65px;
+        
         text-align: center;
     }
 
@@ -146,8 +144,9 @@
     }
 
     .card {
-        margin-right: 200px;
-        width: 1250px;
+        @* margin-left: -13%; *@
+
+        width: 50%x;
         border: 1px solid #33C198;
         box-shadow: 0 10px 10px rgba(51, 193, 152, 0.5);
     }
@@ -163,6 +162,8 @@
 
     .card1 {
         text-align: justify;
+        margin-right: 50px;
+        margin-left:-100px
     }
 
     th {

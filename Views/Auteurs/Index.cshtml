@@ -4,62 +4,94 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-@* <p>
-    <a asp-action="Create">Create New</a>
-</p> *@
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Prenom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateNaissance)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateDeces)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Biographie)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Prenom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateNaissance)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateDeces)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Biographie)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="d-flex flex-column justify-content-center " style="display: block; text-align: center; justify-content:center; margin-left:10%">
+
+    <div class="nav" style="display: flex;">
+        <!----------------------------------  Barre de recherche -------------------------------------------------->
+        <div class="text-center">
+            <input name="query" aria-label="search" autocomplete="off" class="search-field" id="sm"
+                   placeholder="Rechercher par titre, auteur, série" type="search" value="" />
+        </div>
+        <div>
+            <button style="background-color: #33C198; border-color: #33C198;">Chercher</button>
+        </div>
+    </div>
+
+
+    <!----------------------------------  Liste des livres -------------------------------------------------->
+    <div class="d-flex flex-wrap align-items-stretch">
+        @foreach (var item in Model)
+        {
+
+
+            <div class="book card border-success shadow" style=" margin: 10px; width: 22%">
+                <!--  Image --->
+
+                
+
+                    <img class="card-img-top " alt="Le Quatrième homme eBook by Lisa Gardner"
+                         src="@Html.DisplayFor(modelItem => item.ImageWeb)" />
+
+                    <!--  Infos du livre --->
+                
+
+                <div class="card-body">
+
+                    <div class="title card-title ">@Html.DisplayFor(modelItem => item.Prenom)</div>
+                    <div class="auteur card-text">@Html.DisplayFor(modelItem => item.Nom)</div>
+
+                </div>
+
+                <p style="margin-bottom:0% ;">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn " style="width:100%;height:100%;background-color: #33C198; border-color: #33C198;border-radius:0;" role="button">Biographie</a>
+                </p>
+            </div>
+
+
+
+
+
+        }
+    </div>
+</div>
+
+
+
+
+<style>
+    .nav {
+    }
+
+    .container {
+        margin-left: 10px;
+    }
+
+    .margin {
+    }
+
+
+
+    input {
+        padding: 5px;
+        width: 800px;
+        margin-bottom: 70px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    button {
+        margin-top: 12px;
+        padding: 4px;
+        border-radius: 8px;
+        margin-left: 10px;
+    }
+
+    .grid {
+    }
+
+    .decoration {
+        text-decoration: none;
+    }
+</style>
